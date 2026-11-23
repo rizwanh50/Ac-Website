@@ -36,7 +36,7 @@ A single-page lead funnel for **www.lutonaccountants.co.uk**. It includes a hero
 5. `reviews`: replace with **genuine** Google reviews. To hide the section, use an empty list (`[]`).
 6. `form_endpoint`: see below. **Important**.
 7. Optional: `booking_url` (Calendly or similar) adds a "Pick a time online" option. `google_reviews_url` adds a reviews button.
-8. Check every claim is true for you: "reply within 1 working hour", face-to-face meetings in Luton, "taking on new clients", the sectors you serve and the FAQ answers.
+8. Check every claim is true for you: "WhatsApp reply within 24 hours", face-to-face meetings in Luton, "taking on new clients", the sectors you serve and the FAQ answers.
 
 Then run `python3 build.py` and re-paste `dist/elementor-html-widget.html`.
 

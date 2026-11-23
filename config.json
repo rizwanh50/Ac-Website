@@ -26,7 +26,7 @@
 
   "booking_url": "",
   "form_endpoint": "",
-  "response_promise": "within 1 working hour",
+  "response_promise": "within 24 hours",
   "vat_note": "All prices exclude VAT. Fixed fees agreed before we start — no surprise bills.",
 
   "plans": [
