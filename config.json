@@ -1,0 +1,170 @@
+{
+  "_README": "Edit the values below, then run: python3 build.py  — it regenerates everything in /dist. Anything in [square brackets] or marked CHANGE is a placeholder.",
+
+  "brand": "Luton Accountants",
+  "site_url": "https://www.lutonaccountants.co.uk",
+  "privacy_url": "https://www.lutonaccountants.co.uk/privacy-policy",
+
+  "phone_display": "01582 000000",
+  "phone_e164": "+441582000000",
+  "whatsapp_number": "447000000000",
+  "email": "hello@lutonaccountants.co.uk",
+
+  "address": {
+    "street": "[Street address]",
+    "locality": "Luton",
+    "region": "Bedfordshire",
+    "postcode": "LU1 [CHANGE]",
+    "country": "GB"
+  },
+  "geo": { "lat": 51.8787, "lng": -0.4200 },
+  "opening_hours": [
+    { "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" },
+    { "days": ["Saturday"], "opens": "10:00", "closes": "14:00" }
+  ],
+  "hours_text": "Mon–Fri 9am–6pm · Sat 10am–2pm",
+
+  "booking_url": "",
+  "form_endpoint": "",
+  "response_promise": "within 1 working hour",
+  "vat_note": "All prices exclude VAT. Fixed fees agreed before we start — no surprise bills.",
+
+  "plans": [
+    {
+      "id": "self-assessment",
+      "name": "Self Assessment",
+      "price": "149",
+      "unit": "one-off",
+      "tagline": "Your personal tax return, done properly.",
+      "features": [
+        "Tax return prepared & filed with HMRC",
+        "Self-employed, rental & dividend income",
+        "Tax-saving review before we file",
+        "Payments on account checked",
+        "HMRC letters handled for that year"
+      ],
+      "cta": "Get my return done"
+    },
+    {
+      "id": "sole-trader",
+      "name": "Sole Trader",
+      "price": "39",
+      "unit": "/month",
+      "tagline": "For the self-employed, contractors & drivers.",
+      "features": [
+        "Year-end accounts + Self Assessment",
+        "Making Tax Digital quarterly updates",
+        "Bookkeeping app set-up & training",
+        "Unlimited WhatsApp & email support",
+        "Expense & allowance check every year"
+      ],
+      "cta": "Start as a sole trader"
+    },
+    {
+      "id": "limited-company",
+      "name": "Limited Company",
+      "price": "99",
+      "unit": "/month",
+      "popular": true,
+      "tagline": "Everything a small Ltd company needs.",
+      "features": [
+        "Annual accounts & Corporation Tax return",
+        "Director Self Assessment included",
+        "Director payroll & salary/dividend plan",
+        "Confirmation statement filed",
+        "Dedicated accountant, not a call centre"
+      ],
+      "cta": "Choose Ltd Company"
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "price": "179",
+      "unit": "/month",
+      "tagline": "For VAT-registered firms with staff.",
+      "features": [
+        "Everything in Limited Company",
+        "VAT returns (MTD compliant)",
+        "Monthly bookkeeping (up to 100 txns)",
+        "Payroll for up to 5 employees",
+        "Quarterly management accounts"
+      ],
+      "cta": "Choose Growth"
+    }
+  ],
+  "addons_text": "Add-ons: VAT returns from £25/mo · Payroll from £15/mo · CIS returns from £15/mo · Bookkeeping from £60/mo · Free company formation with any monthly plan",
+
+  "calculator": {
+    "types": [
+      { "id": "sa", "label": "Self Assessment only", "oneoff": 149 },
+      { "id": "sole", "label": "Sole trader / self-employed", "monthly": 39 },
+      { "id": "ltd", "label": "Limited company", "monthly": 99 },
+      { "id": "partnership", "label": "Partnership", "monthly": 69 },
+      { "id": "landlord", "label": "Landlord (property income)", "monthly": 25 },
+      { "id": "cis", "label": "CIS subcontractor (construction)", "monthly": 29 }
+    ],
+    "turnover": [
+      { "label": "Under £50k", "add": 0 },
+      { "label": "£50k – £150k", "add": 20 },
+      { "label": "£150k – £500k", "add": 50 },
+      { "label": "Over £500k", "add": null }
+    ],
+    "addons": {
+      "vat": 25,
+      "bookkeeping": 60,
+      "cis_returns": 15,
+      "payroll_base": 15,
+      "payroll_per_employee": 4
+    }
+  },
+
+  "reviews": [
+    {
+      "quote": "[Paste a genuine Google review here. Specific beats generic — e.g. how much tax you saved them, or how quickly you replied.]",
+      "name": "[Client first name]",
+      "detail": "[Business type] · [Area of Luton]"
+    },
+    {
+      "quote": "[Paste a second genuine review. Reviews that mention Luton or a local area help local SEO.]",
+      "name": "[Client first name]",
+      "detail": "[Business type] · [Area]"
+    },
+    {
+      "quote": "[Paste a third genuine review — ideally from someone who switched from another accountant.]",
+      "name": "[Client first name]",
+      "detail": "[Business type] · [Area]"
+    }
+  ],
+  "google_reviews_url": "",
+
+  "faqs": [
+    {
+      "q": "How much does an accountant cost in Luton?",
+      "a": "Our fixed fees start at £149 for a one-off Self Assessment tax return, £39 a month for sole traders and £99 a month for limited companies. You'll know the exact price before we start — use the instant quote calculator above or message us on WhatsApp."
+    },
+    {
+      "q": "Can I switch to you from my current accountant mid-year?",
+      "a": "Yes. Switching is free and we do the hard part: we contact your old accountant for professional clearance, collect your records and take over with HMRC and Companies House. Most switches are completed within two weeks."
+    },
+    {
+      "q": "Do you offer face-to-face meetings in Luton?",
+      "a": "Yes. You can meet us in Luton, or we can do everything by phone, WhatsApp and video call — whichever suits you. Many of our clients never need to visit the office."
+    },
+    {
+      "q": "When is the Self Assessment deadline?",
+      "a": "The online Self Assessment deadline is 31 January following the end of the tax year (5 April). Missing it means an automatic £100 HMRC penalty, with more added the longer it's late. Send us your details early and we'll file well before the deadline."
+    },
+    {
+      "q": "Do you work with taxi and private hire drivers?",
+      "a": "Yes. We look after many Luton taxi and private hire drivers, including those working at London Luton Airport. We make sure you claim everything you're entitled to — fuel or mileage, vehicle costs, licensing fees, insurance, phone and platform fees."
+    },
+    {
+      "q": "Do you cover Dunstable, Houghton Regis and Harpenden?",
+      "a": "Yes. We work with businesses across Luton (LU1–LU4), Dunstable, Houghton Regis, Leighton Buzzard, Harpenden and the surrounding Bedfordshire and Hertfordshire area — and online anywhere in the UK."
+    },
+    {
+      "q": "Are you ready for Making Tax Digital for Income Tax?",
+      "a": "Yes. Making Tax Digital for Income Tax now applies to many sole traders and landlords. We'll set up compatible software, keep your records digital and submit your quarterly updates for you."
+    }
+  ]
+}
