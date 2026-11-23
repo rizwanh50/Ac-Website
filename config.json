@@ -11,10 +11,10 @@
   "email": "hello@lutonaccountants.co.uk",
 
   "address": {
-    "street": "[Street address]",
+    "street": "",
     "locality": "Luton",
     "region": "Bedfordshire",
-    "postcode": "LU1 [CHANGE]",
+    "postcode": "",
     "country": "GB"
   },
   "geo": { "lat": 51.8787, "lng": -0.4200 },
@@ -27,7 +27,7 @@
   "booking_url": "",
   "form_endpoint": "",
   "response_promise": "within 24 hours",
-  "vat_note": "All prices exclude VAT. Fixed fees agreed before we start — no surprise bills.",
+  "price_note": "Fixed fees agreed before we start — no surprise bills.",
 
   "plans": [
     {
@@ -147,8 +147,8 @@
       "a": "Yes. Switching is free and we do the hard part: we contact your old accountant for professional clearance, collect your records and take over with HMRC and Companies House. Most switches are completed within two weeks."
     },
     {
-      "q": "Do you offer face-to-face meetings in Luton?",
-      "a": "Yes. You can meet us in Luton, or we can do everything by phone, WhatsApp and video call — whichever suits you. Many of our clients never need to visit the office."
+      "q": "How does working with a remote accountant work?",
+      "a": "Everything is done by WhatsApp, phone, email and video call. You share documents securely online or snap receipts on your phone, and we keep you updated at every step. It is quicker and more convenient than traditional accountants, and it keeps our fees low."
     },
     {
       "q": "When is the Self Assessment deadline?",

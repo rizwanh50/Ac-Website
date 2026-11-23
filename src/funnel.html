@@ -347,7 +347,7 @@
         <ul class="ticks">
           <li>{{ICON_CHECK}}<span>Know your price upfront — no hourly billing, no surprise invoices</span></li>
           <li>{{ICON_CHECK}}<span>Free switch from your current accountant, we handle everything</span></li>
-          <li>{{ICON_CHECK}}<span>Meet us in Luton or do it all online — your choice</span></li>
+          <li>{{ICON_CHECK}}<span>100% online — sort everything by WhatsApp, phone or video call</span></li>
         </ul>
         <div class="hero-ctas">
           <a href="#quote" class="btn btn-amber" data-laf-track="hero_quote">Get my instant price →</a>
@@ -418,7 +418,7 @@
       </div>
       <div class="plans">{{PRICING_CARDS}}</div>
       <p class="addons">{{ADDONS_TEXT}}</p>
-      <p class="vat">{{VAT_NOTE}}</p>
+      <p class="vat">{{PRICE_NOTE}}</p>
     </div>
   </section>
 
@@ -460,7 +460,7 @@
           <ul id="laf-c-lines"></ul>
           <a class="btn btn-wa" id="laf-c-wa" href="{{WA_LINK}}" target="_blank" rel="noopener" data-laf-track="wa_calc">{{ICON_WA}}Lock in this price on WhatsApp</a>
           <a class="btn btn-amber" id="laf-c-book" href="#book" data-laf-track="calc_book">Book a free call about it</a>
-          <p class="note">{{VAT_NOTE}}</p>
+          <p class="note">{{PRICE_NOTE}}</p>
         </div>
       </div>
     </div>
@@ -474,7 +474,7 @@
         <h2 class="h2">Up and running in three easy steps</h2>
       </div>
       <div class="steps">
-        <div class="step"><h3>Free 15-minute call</h3><p>Tell us about your business by phone, WhatsApp or in person in Luton. We’ll spot quick tax wins straight away.</p></div>
+        <div class="step"><h3>Free 15-minute call</h3><p>Tell us about your business by phone, WhatsApp or video call. We’ll spot quick tax wins straight away.</p></div>
         <div class="step"><h3>Your fixed price</h3><p>We confirm one fixed monthly or one-off fee in writing. No hourly rates and no small print.</p></div>
         <div class="step"><h3>We take it from here</h3><p>We contact your old accountant and HMRC, set up your software and keep every deadline on track.</p></div>
       </div>
@@ -508,16 +508,16 @@
       <div class="prose">
         <span class="eyebrow">Your local accountant</span>
         <h2 class="h2">Accountants in Luton who actually pick up the phone</h2>
-        <p>{{BRAND}} is an accountancy practice for small businesses, sole traders, landlords and limited companies in <strong>Luton, Bedfordshire</strong>. Whether you run a takeaway on Dunstable Road, drive a private hire car out of London Luton Airport, or manage a growing limited company near the town centre, we give you a fixed price, clear advice and fast answers.</p>
+        <p>{{BRAND}} is a remote accountancy practice for small businesses, sole traders, landlords and limited companies in <strong>Luton, Bedfordshire</strong>. Whether you run a takeaway on Dunstable Road, drive a private hire car out of London Luton Airport, or manage a growing limited company near the town centre, we give you a fixed price, clear advice and fast answers.</p>
         <h3>Tax returns and accounts for Luton businesses</h3>
         <p>We prepare and file <strong>Self Assessment tax returns</strong>, <strong>sole trader accounts</strong>, <strong>limited company year-end accounts and Corporation Tax</strong>, <strong>VAT returns</strong>, <strong>payroll and pensions</strong>, and <strong>CIS returns</strong> for clients across Luton and the surrounding area. We’re ready for <strong>Making Tax Digital</strong> and will set up the right software for you.</p>
         <h3>Covering Luton, Dunstable and beyond</h3>
-        <p>Our clients are based in Bury Park, High Town, Leagrave, Lewsey Farm, Marsh Farm, Stopsley, Wigmore, Round Green, Farley Hill, Sundon Park and Limbury — as well as Dunstable, Houghton Regis, Caddington, Toddington, Barton-le-Clay, Harpenden and Leighton Buzzard. Prefer not to travel? We work with clients online across the UK.</p>
+        <p>Our clients are based in Bury Park, High Town, Leagrave, Lewsey Farm, Marsh Farm, Stopsley, Wigmore, Round Green, Farley Hill, Sundon Park and Limbury — as well as Dunstable, Houghton Regis, Caddington, Toddington, Barton-le-Clay, Harpenden and Leighton Buzzard. Because we’re fully remote, we can also work with clients anywhere in the UK.</p>
       </div>
       <aside class="local-card" aria-label="Contact details">
         <h3>{{BRAND}}</h3>
         <div class="nap">
-          <div>{{ICON_PIN}}<span>{{ADDR_STREET}}, {{ADDR_LOCALITY}}, {{ADDR_POSTCODE}}</span></div>
+          <div>{{ICON_PIN}}<span>{{ADDR_DISPLAY}}</span></div>
           <div>{{ICON_PHONE}}<a href="tel:{{PHONE_TEL}}" data-laf-track="call_local">{{PHONE_DISPLAY}}</a></div>
           <div>{{ICON_MAIL}}<a href="mailto:{{EMAIL}}" data-laf-track="email_local">{{EMAIL}}</a></div>
           <div>{{ICON_CLOCK}}<span>{{HOURS_TEXT}}</span></div>
@@ -567,7 +567,7 @@
               <label class="chip"><input type="radio" name="contact_method" value="WhatsApp" checked><span>WhatsApp</span></label>
               <label class="chip"><input type="radio" name="contact_method" value="Phone call"><span>Phone call</span></label>
               <label class="chip"><input type="radio" name="contact_method" value="Email"><span>Email</span></label>
-              <label class="chip"><input type="radio" name="contact_method" value="Meet in Luton"><span>Meet in Luton</span></label>
+              <label class="chip"><input type="radio" name="contact_method" value="Video call"><span>Video call</span></label>
             </div></div>
           <div class="full"><span class="fl">Best time</span>
             <div class="chips">
@@ -619,7 +619,7 @@
   <!-- ============ FOOTER (NAP — keep identical to Google Business Profile) ============ -->
   <footer class="ftr">
     <div class="wrap">
-      <address><strong>{{BRAND}}</strong> · {{ADDR_STREET}}, {{ADDR_LOCALITY}}, {{ADDR_POSTCODE}} · <a href="tel:{{PHONE_TEL}}">{{PHONE_DISPLAY}}</a> · <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></address>
+      <address><strong>{{BRAND}}</strong> · {{ADDR_DISPLAY}} · <a href="tel:{{PHONE_TEL}}">{{PHONE_DISPLAY}}</a> · <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></address>
       <span>© <span id="laf-year">{{YEAR}}</span> {{BRAND}} · <a href="{{PRIVACY_URL}}">Privacy policy</a></span>
     </div>
   </footer>

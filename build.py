@@ -99,6 +99,12 @@ if cfg.get("booking_url"):
 
 # ---------- Structured data ----------
 a = cfg["address"]
+# Remote / service-area practice: street and postcode are optional and only shown if set.
+addr_display = ", ".join(x for x in [a.get("street"), a.get("locality"), a.get("postcode")] if x) if a.get("street") \
+    else f"Remote practice serving {a['locality']} & {a['region']}"
+postal = {"@type": "PostalAddress", "addressLocality": a["locality"], "addressRegion": a["region"], "addressCountry": a["country"]}
+if a.get("street"): postal["streetAddress"] = a["street"]
+if a.get("postcode"): postal["postalCode"] = a["postcode"]
 schema_local = {
     "@context": "https://schema.org",
     "@type": "AccountingService",
@@ -109,15 +115,8 @@ schema_local = {
     "email": cfg["email"],
     "priceRange": "££",
     "currenciesAccepted": "GBP",
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": a["street"],
-        "addressLocality": a["locality"],
-        "addressRegion": a["region"],
-        "postalCode": a["postcode"],
-        "addressCountry": a["country"],
-    },
-    "geo": {"@type": "GeoCoordinates", "latitude": cfg["geo"]["lat"], "longitude": cfg["geo"]["lng"]},
+    "address": postal,
+    **({"geo": {"@type": "GeoCoordinates", "latitude": cfg["geo"]["lat"], "longitude": cfg["geo"]["lng"]}} if a.get("street") else {}),
     "openingHoursSpecification": [
         {"@type": "OpeningHoursSpecification", "dayOfWeek": h["days"], "opens": h["opens"], "closes": h["closes"]}
         for h in cfg["opening_hours"]
@@ -173,12 +172,10 @@ tokens = {
     "WA_LINK": f"https://wa.me/{wa_num}",
     "EMAIL": e(cfg["email"]),
     "PRIVACY_URL": e(cfg["privacy_url"]),
-    "ADDR_STREET": e(a["street"]),
-    "ADDR_LOCALITY": e(a["locality"]),
-    "ADDR_POSTCODE": e(a["postcode"]),
+    "ADDR_DISPLAY": e(addr_display),
     "HOURS_TEXT": e(cfg["hours_text"]),
     "RESPONSE": e(cfg["response_promise"]),
-    "VAT_NOTE": e(cfg["vat_note"]),
+    "PRICE_NOTE": e(cfg["price_note"]),
     "ADDONS_TEXT": e(cfg["addons_text"]),
     "FROM_PRICE_SOLE": e(sole["price"]),
     "PRICING_CARDS": "".join(cards),

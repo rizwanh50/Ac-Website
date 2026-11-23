@@ -31,12 +31,12 @@ A single-page lead funnel for **www.lutonaccountants.co.uk**. It includes a hero
 
 1. `phone_display`, `phone_e164`: your real number (the `e164` format is `+441582…`).
 2. `whatsapp_number`: international format with no `+` or spaces, e.g. `447912345678`.
-3. `email` and `address`: these **must match your Google Business Profile exactly**. Name, address and phone consistency is a major local-ranking factor.
+3. `email` and `address`: as a remote practice, leave `street` and `postcode` empty. The page then says "Remote practice serving Luton & Bedfordshire" and no office address is published. On Google Business Profile, set yourself up as a **service-area business** with the address hidden. Keep the business name and phone identical everywhere, because consistency is a major local-ranking factor.
 4. `plans`, `addons_text` and `calculator`: your real prices. The prices included are realistic UK placeholders.
 5. `reviews`: replace with **genuine** Google reviews. To hide the section, use an empty list (`[]`).
 6. `form_endpoint`: see below. **Important**.
 7. Optional: `booking_url` (Calendly or similar) adds a "Pick a time online" option. `google_reviews_url` adds a reviews button.
-8. Check every claim is true for you: "WhatsApp reply within 24 hours", face-to-face meetings in Luton, "taking on new clients", the sectors you serve and the FAQ answers.
+8. Check every claim is true for you: "WhatsApp reply within 24 hours", "taking on new clients", the sectors you serve and the FAQ answers.
 
 Then run `python3 build.py` and re-paste `dist/elementor-html-widget.html`.
 
@@ -61,9 +61,9 @@ Then run `python3 build.py` and re-paste `dist/elementor-html-widget.html`.
 ## Local SEO built in
 
 - Keyword-led H1 ("accountants in Luton"), H2s and copy naming Luton areas, nearby towns and LU postcodes.
-- `AccountingService` LocalBusiness schema: address, geo, opening hours, areas served and prices.
+- `AccountingService` LocalBusiness schema: service area, opening hours and prices. A street address and map location are added only if you set one.
 - `FAQPage` schema generated from the same FAQ list shown on the page.
-- A footer with name, address and phone that should match your Google Business Profile.
+- A footer with business name, service area and phone that should match your Google Business Profile.
 - Add the title and description from `dist/seo-settings.txt` to Yoast or Rank Math.
 
 **Off-page actions that matter most:** use this URL as the website on your Google Business Profile, set the primary category to "Accountant", and ask every happy client for a Google review that mentions Luton.
